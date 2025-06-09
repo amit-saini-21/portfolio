@@ -1,0 +1,5 @@
+/myvenv
+myvenv
+myvenv/
+*.zip
+*.pdf

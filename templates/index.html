@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Saini - Futuristic Developer Portfolio</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">AS</div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Amit Saini</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-frame">
+                    <img src="{{url_for('static',filename='images/amit.png')}}" alt="Amit Saini" class="avatar-img">
+                    <div class="avatar-glow"></div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm <span class="highlight">Amit Saini</span></span>
+                    <span class="title-line">I Build Tech That</span>
+                    <span class="title-line">Speaks the <span class="gradient-text">Future</span></span>
+                </h1>
+                <p class="hero-subtitle">3rd Year Computer Science Student & Member of Syntax Error Organization</p>
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/uc?export=download&id=18yo3FuIS4PVWBHDrTGS2tPcCXMG55m5A" download >
+                    <button class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button></a>
+                    <a href="#contact">
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i>
+                        Hire Me
+                    </button></a>
+                    <a href="#projects">
+                    <button class="btn btn-outline" >
+                        <i class="fas fa-code"></i>
+                        View Projects
+                    </button></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Crafting digital experiences with passion and precision</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="glass-card">
+                        <h3>My Story</h3>
+<p>
+  From the small sparks of curiosity to igniting entire ideas — my journey in tech began not with code, but with questions. I’m Amit Saini, a 3rd-year Computer Science student who believes that technology is not just tools and logic — it's emotion, creativity, and transformation.
+</p>
+<p>
+  Whether it's building smart and secure apps, or futuristic UIs, I believe in code that connects — not just devices, but people. Every project I create is a part of my story, and every line of code carries a piece of my belief that the future isn't something we wait for — it's something we build.
+</p>
+
+                    </div>
+                </div>
+                <div class="about-timeline">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2022 - Present</h4>
+                                <p>Computer Science Student</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2024</h4>
+                                <p>Joined Syntax Error Organization</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2024</h4>
+                                <p>Multiple Certifications & Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-c"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <i class="fab fa-react"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fas fa-database"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-subtitle">Recognition of my learning journey</p>
+            </div>
+            <div class="certificate-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="internships">Internships</button>
+                <button class="filter-btn" data-filter="achievements">Achievements</button>
+                <button class="filter-btn" data-filter="hackathons">Hackathons</button>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-category="achievements">
+                    <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fab fa-hackerrank"></i>
+                        </div>
+                        <h3>HackerRank Python</h3>
+                        <p>Certification</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>HackerRank Python</h3>
+                        <p>Completed Basic Python programming challenges and earned certification for problem-solving skills.</p>
+                        <div class="cert-date">2024</div>
+                    </div>
+                </div>
+                <div class="certificate-card" data-category="achievements">
+                    <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fab fa-hackerrank"></i>
+                        </div>
+                        <h3>HackerRank problem-solving</h3>
+                        <p>Certification</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>HackerRank problem-solving</h3>
+                        <p>Completed Basic problem and challenges, solved them  and earned certification for problem-solving skills.</p>
+                        <div class="cert-date">2024</div>
+                    </div>
+                </div>
+                 <div class="certificate-card" data-category="achievements">
+                     <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>CISCO</h3>
+                        <p>Introduction to Cybersecurity</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>CISCO</h3>
+                        <p>Completed the Cisco Networking Academy Introduction to Cybersecurity course, and demonstrating the ablity to explain Impact of cyber-attacks on industries, Global implications ofcybber threats etc.</p>
+                        <div class="cert-date">2023</div>
+                    </div>
+                </div>
+                <div class="certificate-card" data-category="achievements">
+                     <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>CISCO</h3>
+                        <p>Cybersecurity Essentials</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>CISCO</h3>
+                        <p>Completed the Cisco Networking Academy Cybersecurity Essentials course, and demonstrating ablities techniques and procedures used by cyber criminals, purpose of law related to Cybersecurity etc.</p>
+                        <div class="cert-date">2023</div>
+                    </div>
+                </div>
+                <div class="certificate-card" data-category="internships">
+                    <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Paloalto Networks</h3>
+                        <p>Cybersecurity Virtual Internship</p>
+                    </div>
+                    <div class="card-back">
+                          <h3>Paloalto Networks</h3>
+                        <p>Completed Cybersecurity Virtual internship conducted by Paloalto Networks and AICTE training program with hands-on projects.</p>
+                        <div class="cert-date">2024</div>
+                    </div>
+                </div>
+                <div class="certificate-card" data-category="hackathons">
+                    <div class="card-front">
+                        <div class="cert-logo">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        
+                        <h3>College Hackathon</h3>
+                        <p>Trikon 1.O</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>College Hackathon</h3>
+                        <p>Build a Smart Shoes that help Army Personnel During landslide. It send signal to the control System and they can rescue on time..</p>
+                        <div class="cert-date">2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my latest work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-tags="web react">
+                    <div class="project-image">
+                        <img src="{{url_for('static',filename='images/p1.png')}}" alt="Text Analyzer Web App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://text-analyzer-n0of.onrender.com/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/amit-saini-21/text_analyzer" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Text Analyzer Web App</h3>
+                        <p>Text Analyzer web app that anlaysis text count words, characters, remove punctuation </p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tags="python">
+                    <div class="project-image">
+                        <img src="{{url_for('static',filename='images/p2.png')}}" alt="Employee Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://employee-management-nnf2.onrender.com/index" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/amit-saini-21/Employee" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Employee Management Web App</h3>
+                        <p>Build a Employee management system with CRUD operations and use MongoDB data base.<br>User Name : Amit Saini<br>Password : Amit4949</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card" data-tags="web react">
+                    <div class="project-image">
+                        <img src="{{url_for('static',filename='images/p5.jpeg')}}" alt="Blog Web App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://history-warriors.onrender.com/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/amit-saini-21/history_warriors" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Web App</h3>
+                        <p>Build a Blog Web App where I uploaded a history of warriors. It is a individual blog web where admin can perform CRUD operation. </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tags="web gui">
+                    <div class="project-image">
+                        <img src="{{url_for('static',filename='images/p3.png')}}" alt="Task Manager">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/uc?export=download&id=1lFzDV7J7uG1DuJde1tv8-7ICfuriVT2d" download class="project-link">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                                <a href="https://github.com/amit-saini-21/To-Do-List-" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do List App</h3>
+                        <p>Desktop application for project management with intuitive GUI. Download the zip file, extract and use it.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tags="web gui">
+                    <div class="project-image">
+                        <img src="{{url_for('static',filename='images/p4.png')}}" alt="Rock Paper Scissor">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                               <a href="https://drive.google.com/uc?export=download&id=1PrNX6EYPfHV5EaEu2iXvrIc-y-8kr-8Z" download class="project-link">
+
+                                    <i class="fas fa-download"></i>
+                                </a>
+                                <a href="https://github.com/amit-saini-21/Rock_Paper_Scissor-Game" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rock Paper Scissor Game</h3>
+                        <p>Desktop Rock-paper-scissor game application with intuitive GUI and win Tracker. Download the zip file, extract and use it.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, creative projects, or just having a chat about technology.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>amitsuryavanshi804@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 97595 70559</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>India</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/amit-saini-5b7858280/" class="social-link" target="_blank
+                            ">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/amit-saini-21" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/saini.sahab.amit/" class="social-link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="glass-card" id="contact-form" action="/" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-quote">
+                    <p>"Creating the future, one line at a time."</p>
+                </div>
+                <div class="footer-links">
+                   <div class="social-links">
+                            <a href="https://www.linkedin.com/in/amit-saini-5b7858280/" class="social-link" target="_blank
+                            ">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/amit-saini-21" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/saini.sahab.amit/" class="social-link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Amit Saini. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
