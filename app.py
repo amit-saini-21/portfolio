@@ -71,6 +71,7 @@ Your Portfolio Bot 💼
     except Exception as e:
         print(f"SendGrid Error: {e}")
 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
-if __name__ == '__main__':
-    app.run(debug=False)
