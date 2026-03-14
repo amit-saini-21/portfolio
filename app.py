@@ -61,7 +61,7 @@ Your Portfolio Bot 💼
 
         message = Mail(
             from_email='sumitsainisumit502@gmail.com',
-            to_emails='deepakdee234paksharma@gmail.com',
+            to_emails='amitsuryavanshi8004@gmail.com',
             subject='New Contact Form Submission',
             plain_text_content=content
         )
