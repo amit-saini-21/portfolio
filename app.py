@@ -33,6 +33,10 @@ def index():
         send_email_via_sendgrid(name, email, subject, message)
         return "success", 200  # Just return text for JS to read
     return render_template("index.html")
+    
+@app.route('/ping')
+def ping():
+    return "PONG", 200
 
 def send_email_via_sendgrid(name, email, subject, message):
     try:
